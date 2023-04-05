@@ -1,0 +1,66 @@
+<nb-card>
+<nb-card-body>
+    <nb-toggle (click)="onToggleAdvanceMode()" status="basic" >Advanced mode</nb-toggle>
+    <!-- <button nbButton (click)="onToggle()"></button> -->
+</nb-card-body>
+</nb-card>
+
+<nb-card>
+    <nb-card-header>
+       Create and chat
+        </nb-card-header>
+    <nb-card-body>
+        <form #f="ngForm" >
+            <label for="newPrompt">Chatbot's Name</label>
+            <br>
+            <br>
+            <input id="newPromptTitle" name="newPromptTitle" nbInput fullWidth placeholder="{{ newPrompt }}" ngModel required
+                #newPromptTitle="ngModel" required>
+            <br>
+            <br>
+            <label for="newPrompt">Chatbot's Avatar URL</label>
+            <br>
+            <br>
+            <input id="newPromptAvatarURL" name="newPromptAvatarURL"  nbInput fullWidth placeholder="" ngModel required
+                #newPromptAvatarURL="ngModel">
+            <br>
+            <br>
+            <label for="newPrompt">Chatbot's Facts</label>
+            <br>
+            <br>
+            <textarea id="newPromptFacts" name="newPromptFacts" fieldSize='giant' nbInput fullWidth placeholder="Eg. 'You are really clever, you are very polite, your country never banned ChatGPT' (and so on)" ngModel required
+                #newPromptFacts="ngModel" required></textarea>
+            <br>
+            <br>
+            <label for="newPrompt">Conversation rules</label>
+            <br>
+            <br>
+            <textarea id="newPromptRules" name="newPromptRules" fieldSize='giant' nbInput fullWidth placeholder="Eg. 'Answer with less then 30 words, use emoji if appropriate, don't talk like a robot, never say As a language model...'" ngModel required
+                #newPromptRules="ngModel" required></textarea>
+            <br>
+            <br>
+
+
+        <button *ngIf="isAdvancedMode === true" size="small" (click)="onPreview(f)" nbButton>Preview</button>
+        <button *ngIf="isAdvancedMode === false" size="small" nbButton (click)="onNewPrompt(f)"> Chat now</button>
+        </form>
+    </nb-card-body>
+</nb-card>
+
+
+<nb-card *ngIf="isAdvancedMode === true && injectedHeaderPreview && injectedHeaderPreview.length > 1">
+<nb-card-header>
+    Preview and edit
+</nb-card-header>
+
+<nb-card-body >
+    <form #f="ngForm" >
+        <textarea id="injectedHeaderPreview" name="injectedHeaderPreview" fieldSize='giant' nbInput [(ngModel)]="injectedHeaderPreview" fullWidth="true" placeholder="" value="asd" ngModel required
+        required></textarea>
+    </form>
+    <br>
+    <br>
+    <button size="small" nbButton rows="50" (click)="onNewPrompt(f)"> Chat now</button>
+</nb-card-body>
+</nb-card>
+

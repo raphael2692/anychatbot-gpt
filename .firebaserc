@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "anychatbot-gpt"
+  },
+  "targets": {
+    "anychatbot-gpt": {
+      "hosting": {
+        "anychatbot-gpt": [
+          "anychatbot-gpt"
+        ]
+      }
+    }
+  }
+}

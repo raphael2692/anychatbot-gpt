@@ -1,0 +1,45 @@
+<!-- <p>prompts works!</p> -->
+<!-- <div *ngFor="let prompt of prompts">
+  <div> {{ prompt | json }} </div>
+</div> -->
+
+  <!-- <nb-list
+    nbInfiniteList
+    listenWindowScroll
+    [threshold]="10"
+    (bottomThreshold)="loadNext()">
+    <nb-list-item *ngFor="let prompt of prompts">
+      <nb-card size="medium">
+        <nb-card-header>{{ prompt.title}}</nb-card-header>
+        <nb-card-body>{{ prompt.description }}</nb-card-body>
+        <nb-card-footer>{{ prompt.category }} | {{ prompt.subCategory }}
+          <hr>
+          <span *ngFor="let tag of prompt.tags"> #{{ tag  }}</span>
+        </nb-card-footer>
+
+      </nb-card>
+    </nb-list-item>
+  </nb-list> -->
+
+
+<nb-card>
+  <nb-card-header>
+    <nb-icon icon="message-square-outline"></nb-icon>&nbsp; Chatbots (All)
+  </nb-card-header>
+</nb-card>
+
+  <nb-accordion multi>
+    <nb-accordion-item *ngFor="let prompt of prompts; index as i">
+      <nb-accordion-item-header>
+        {{ prompt.title}} &nbsp;&nbsp;&nbsp;&nbsp; <i> {{ prompt.category}}</i>
+      </nb-accordion-item-header>
+      <nb-accordion-item-body>
+        {{ prompt.description }}
+        <br>
+        <br>
+        <button size="small"  (click)="onSetCurrentPrompt(i)" nbButton>Chat now</button>
+
+      </nb-accordion-item-body>
+    </nb-accordion-item>
+  
+  </nb-accordion>

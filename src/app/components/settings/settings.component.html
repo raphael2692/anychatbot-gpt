@@ -1,0 +1,82 @@
+<nb-card>
+    <nb-card-body>
+        <nb-toggle (click)="onToggle()" status="basic">Dark mode</nb-toggle>
+    </nb-card-body>
+</nb-card>
+
+<!-- <nb-card>
+    <nb-card-header>
+        API Key (openAI)
+    </nb-card-header>
+
+    <nb-card-body>
+
+        <br>
+        <form #f="ngForm" (ngSubmit)="onUserUpdateApiKey(f)" novalidate>
+
+            <input id="openaikey" name="openaikey" nbInput fullWidth placeholder="{{ openaiKey }}" ngModel required
+                #openaikey="ngModel">
+                <p><b>Important</b>: your API key will only be stored on your local browser to allow us to use the OpenAI APIs
+                    and will be deleted after you log out.</p>
+            <br>
+            <br>
+            <div *ngIf="!openaiKey">
+
+                <p>Missing key! follow <a href="https://platform.openai.com/account/api-keys">this link</a> to get one!
+                    (Or follow the steps below...)
+                </p>
+            </div>
+            <br>
+            <button size="small" nbButton>Update</button>
+        </form>
+    </nb-card-body>
+</nb-card> -->
+
+
+<nb-card>
+    <nb-card-header>
+        API Settings
+    </nb-card-header>
+    <nb-card-body>
+
+        <form #f="ngForm" (ngSubmit)="onUserUpdateApiKey(f)" novalidate>
+
+            <p><b>OpenAI Key</b></p>
+            <br>
+            <input id="openaikey" name="openaikey" fullWidth nbInput placeholder="{{ openaiKey }}" ngModel required
+                #openaikey="ngModel">
+            <p><i>Your API key will only be stored on your local browser to allow us to use the OpenAI APIs
+                    and will be deleted after you log out.</i></p>
+
+            <div *ngIf="!openaiKey">
+
+                <p>Missing key! follow <a href="https://platform.openai.com/account/api-keys">this link</a> to get one!
+                    (Or follow the steps below...)
+                </p>
+            </div>
+            <br>
+            <button size="small" nbButton>Update</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <p><b>Maximum reply tokens</b></p>
+        <br>
+        <input id="maxTokens" name="maxTokens" fieldSize='medium' nbInput [(ngModel)]="maxTokens"
+            placeholder="{{ maxTokens }}" ngModel required required>
+        <p><i>Premade bots are 'hard prompted' so this setting shoud not affect the reply length on those</i></p>
+        <br>
+        <button size="small" (click)="onSetMaxTokens(maxTokens)" nbButton>Update</button>
+        <br>
+        <br>
+        <br>
+        <p><b>Target language model</b></p>
+        <br>
+        <input id="targetModel" name="targetModel" fieldSize='medium' nbInput [(ngModel)]="targetModel"
+            placeholder="{{ targetModel }}" ngModel required disabled>
+        <!-- <br>
+        <br>
+        <button size="small" (click)="onSetTargetModel(targetModel)" nbButton>Update</button> -->
+
+    </nb-card-body>
+</nb-card>
