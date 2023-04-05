@@ -28,6 +28,8 @@ import { PromptCreateRoleplayComponent } from './components/prompt-create-rolepl
 import { TestComponent } from './components/test/test.component';
 import { NebularLayoutComponent } from './components/nebular-layout/nebular-layout.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
+
 
 @NgModule({
   declarations: [
@@ -71,6 +73,7 @@ import { LandingComponent } from './components/landing/landing.component';
     NbListModule,
     NbAccordionModule,
     NbStepperModule,
+    NtkmeButtonModule
     
   ],
   providers: [
