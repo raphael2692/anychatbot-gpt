@@ -24,14 +24,14 @@
 
 <nb-card>
   <nb-card-header>
-    <nb-icon icon="message-square-outline"></nb-icon>&nbsp; Chatbots (All)
+    <nb-icon icon="message-square-outline"></nb-icon>&nbsp; Chatbots (premade)
   </nb-card-header>
 </nb-card>
 
   <nb-accordion multi>
     <nb-accordion-item *ngFor="let prompt of prompts; index as i">
       <nb-accordion-item-header>
-        {{ prompt.title}} &nbsp;&nbsp;&nbsp;&nbsp; <i> {{ prompt.category}}</i>
+        {{ prompt.title}} &nbsp;&nbsp; <i> {{ prompt.category}}</i>&nbsp;({{ prompt.lang }})
       </nb-accordion-item-header>
       <nb-accordion-item-body>
         {{ prompt.description }}
