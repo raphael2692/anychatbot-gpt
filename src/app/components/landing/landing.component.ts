@@ -22,6 +22,6 @@ export class LandingComponent implements OnInit{
   }
 
   onClick() {
-    this.router.navigateByUrl('/app')
+    this.router.navigateByUrl('/app', )
   }
 }

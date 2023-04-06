@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NbSidebarService } from '@nebular/theme';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 
 @Component({
   selector: 'app-nebular-layout',
@@ -11,7 +12,7 @@ export class NebularLayoutComponent implements OnInit {
   isCollapsed = false;
   isAcceptAndDismiss = true;
 
-  constructor(private sidebarService: NbSidebarService) { }
+  constructor(private sidebarService: NbSidebarService, private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
 
@@ -25,6 +26,7 @@ export class NebularLayoutComponent implements OnInit {
 
   onAcceptAndDismiss() {
     this.isAcceptAndDismiss = false
+    this.localStorageService.addItem("termsAccepted", "accepted")
   }
   // toggle() {
 

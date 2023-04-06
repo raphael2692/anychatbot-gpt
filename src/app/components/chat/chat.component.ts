@@ -5,6 +5,7 @@ import { NebularChatMessage } from 'src/app/models/nebular-chat-message.model';
 import { PromptService } from 'src/app/services/prompt.service';
 import { OpenaiService } from 'src/app/services/openai.service';
 import { NbSidebarService } from '@nebular/theme';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 
 @Component({
   selector: 'app-chat',
@@ -18,22 +19,27 @@ export class ChatComponent implements OnInit {
   isLoggedUser = false
   loggedUser: any
   openaiKey: any
-  botResponse:any
-  maxMessagesWindow:any
+  botResponse: any
+  maxMessagesWindow: any
   isChatEnabled: any
+  termsAccepted: Boolean = false
   messages: NebularChatMessage[] = [
-    
+
   ];
   constructor(
     private authService: AuthService,
     private router: Router,
     private promptService: PromptService,
     private openaiService: OpenaiService,
-    private sidebarService: NbSidebarService
-  ) { }
-  
+    private sidebarService: NbSidebarService,
+    private localStorageService: LocalStorageService
+  ) {
+    this.termsAccepted = this.localStorageService.isValid('termsAccepted')
+    console.debug(this.termsAccepted)
+  }
+
   ngOnInit(): void {
-   
+
 
     this.promptService.currentPrompt$.subscribe((value) => {
       this.currentPrompt = value;
@@ -60,17 +66,29 @@ export class ChatComponent implements OnInit {
       this.router.navigate(['/'])
     }
 
+
+    if (this.termsAccepted === true) {
+
+    }
+
+    else {
+
+
+      alert("Must accept terms first!")
+      this.router.navigate(['/app'])
+    }
     this.authService.openaiKey$.subscribe(
       res => this.openaiKey = res
     )
 
-    
+
+
   }
 
   userSendMessage(event: { message: any; }) {
     this.messages.push({
       text: event.message,
-      date: new Date(), 
+      date: new Date(),
       reply: true,
       user: {
         name: this.loggedUser.displayName,
@@ -82,23 +100,23 @@ export class ChatComponent implements OnInit {
   }
 
 
-getBotReply() {
-  console.log("click")
+  getBotReply() {
+    console.log("click")
 
-  this.openaiService.postChatMessage(this.openaiKey, this.currentPrompt, this.loggedUser, this.messages.slice(this.maxMessagesWindow))
-    .subscribe(
-      data => {
-        console.log("Success", data)
-        this.botResponse = data
-        this.composeBotReply()
-      },
-      error => {
-        console.log("Success", error)
-        this.botResponse = error
-        this.composeBotReply()
-      }
-    )
-}
+    this.openaiService.postChatMessage(this.openaiKey, this.currentPrompt, this.loggedUser, this.messages.slice(this.maxMessagesWindow))
+      .subscribe(
+        data => {
+          console.log("Success", data)
+          this.botResponse = data
+          this.composeBotReply()
+        },
+        error => {
+          console.log("Success", error)
+          this.botResponse = error
+          this.composeBotReply()
+        }
+      )
+  }
 
   composeBotReply() {
     this.messages.push(
