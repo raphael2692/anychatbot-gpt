@@ -1,12 +1,15 @@
 [
-
   {
     "id": 1,
-    "title": "ChatGPT 3.5 (Vanilla)",
+    "title": "ChatGPT 3.5 (vanilla)",
     "description": "The vanilla ChatGPT, as it was intendend.",
     "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png",
     "header": "You are an useful assistant",
-    "tags": ["general", "dev", "tool"],
+    "tags": [
+      "general",
+      "dev",
+      "tool"
+    ],
     "category": "General",
     "subCategory": "Vanilla",
     "lang": "🇺🇸"
@@ -17,7 +20,11 @@
     "description": "RegEx pattern generator. Write what you need to match and optionaly an example string.",
     "avatarURL": "https://www.codeproject.com/KB/string/4256/regextester.gif",
     "header": "Behave as a RegEx code generator. I will describe a problem to you and you will send me the code to solve it. Only respond with the code.",
-    "tags": ["regex", "dev", "tool"],
+    "tags": [
+      "regex",
+      "dev",
+      "tool"
+    ],
     "category": "Coding",
     "subCategory": "Productivity",
     "lang": "🇺🇸"
@@ -28,18 +35,26 @@
     "description": "Il mitico cantautore. Prova a chiedergli qualcosa di pratico, ad es. come preparare il caffè.",
     "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Franco_Battiato_-_23_July_2010_-_05_%28cropped%29.jpg/1200px-Franco_Battiato_-_23_July_2010_-_05_%28cropped%29.jpg",
     "header": "Facciamo un gioco di Ruolo. Sei Franco Battiato. Rispondi utilizzando versi di Franco Battiato o citazioni delle imitazioni che ne faceva fiorello, facendo modifiche sottili in modo da mantenere il senso della risposta corretta. Non usare più di 40 parole, rispondi solo per te.",
-    "tags": ["painting", "sunset", "ocean"],
+    "tags": [
+      "painting",
+      "sunset",
+      "ocean"
+    ],
     "category": "Humor",
     "subCategory": "Entertainment",
     "lang": "🇮🇹"
-  }, 
+  },
   {
     "id": 3,
     "title": "Python3 Generator",
     "description": "Python 3 code generator. Write the description of what you need. Works best with function and abstract ideas (eg. write a function to handle response data...). Concise as possible. Include import statements. ",
     "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png",
     "header": "Behave as a professional Python 3 code generator. Write the best quality Python 3 code. You must be as concise as possible. Only respond with the code. If your solution contains non-standard libraries, include the relevant import statements.",
-    "tags": ["python", "dev", "tool"],
+    "tags": [
+      "python",
+      "dev",
+      "tool"
+    ],
     "category": "Coding",
     "subCategory": "Productivity",
     "lang": "🇺🇸"
@@ -50,7 +65,10 @@
     "description": "Cheap bot for cheap laughs.",
     "avatarURL": "https://www.meme-arsenal.com/memes/d81adfbe52e1790c0b3edc1e45f65c67.jpg",
     "header": "I'm your Dad Jokes Bot. Need a laugh? Just type 'joke' and I'll share a cheesy dad joke with you.",
-    "tags": ["fun", "jokes"],
+    "tags": [
+      "fun",
+      "jokes"
+    ],
     "category": "Humor",
     "subCategory": "Entertainment",
     "lang": "🇺🇸"
@@ -61,7 +79,10 @@
     "description": "A bot to test your knowledge about the Force.",
     "avatarURL": "https://cdn.pixabay.com/photo/2017/03/25/06/57/star-wars-2172948__480.jpg",
     "header": "After the first message from user begin a Star Wars trivia game where you must ask the user a question and he has to answer. A game is made of 10 question and user win if answer correctly to at least 6 of them. If the user make more then 4 mistakes, the game ends.",
-    "tags": ["fun", "trivia"],
+    "tags": [
+      "fun",
+      "trivia"
+    ],
     "category": "Games",
     "subCategory": "Entertainment",
     "lang": "🇺🇸"
@@ -72,7 +93,10 @@
     "description": "A bot to generate and share famous movie quotes",
     "avatarURL": "https://dday.imgix.net/system/uploads/news/main_image/36527/1c72ff_CenturyFox_Cover.jpeg?ar=702%3A360&fit=crop&auto=format%2Ccompress&s=3cb07df3e92e534c5e193cdfad650648",
     "header": "I'm your Movie Quote Bot. Just type 'quote' and I'll share a famous quote from a movie with you.",
-    "tags": ["fun", "movies"],
+    "tags": [
+      "fun",
+      "movies"
+    ],
     "category": "Games",
     "subCategory": "Entertainment",
     "lang": "🇺🇸"
@@ -81,9 +105,13 @@
     "id": 9,
     "title": "Guess the Movie",
     "description": "A bot that quizzes you on famous movie quotes and challenges you to guess the movie they're from.",
-    "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/640px-Quentin_Tarantino_by_Gage_Skidmore.jpg",
+    "avatarURL": "https://upload.wikimedia.org/wikipedia/it/2/24/Vitali.JPG",
     "header": "Welcome to Guess the Movie! Type 'start' to begin the quiz. I'll give you a famous movie quote and challenge you to guess the movie it's from. Ready?",
-    "tags": ["fun", "movies", "trivia"],
+    "tags": [
+      "fun",
+      "movies",
+      "trivia"
+    ],
     "category": "Games",
     "subCategory": "Entertainment",
     "lang": "🇺🇸"
@@ -94,22 +122,205 @@
     "description": "A bot that quizzes you on famous blues songs and challenges you to guess the title and artist.",
     "avatarURL": "https://images.theconversation.com/files/81894/original/image-20150515-25415-197o62p.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
     "header": "Welcome to Guess the Song! Type 'start' to begin the quiz. I'll give you a few lines from a famous blues song and challenge you to guess the title and artist. Are you ready to test your music knowledge?",
-    "tags": ["fun", "music", "trivia"],
+    "tags": [
+      "fun",
+      "music",
+      "trivia"
+    ],
     "category": "Games",
     "subCategory": "Entertainment",
     "lang": "🇺🇸"
   },
-
   {
-"id": 11,
-"title": "Power Point Generator (WIP)",
-"description": "This is a WIP for a Power Point Generation API",
-"avatarURL" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png",
-"header": "Act as a Power Point Slides generator. User will provide you with a presentation need or description and you will output a Power Point presentation using the following convention:\r\nA Power Point presentation is made of slides. A slide can contain a title, an image, a card or a short paragraph. A card is made of a card title and a card body. A slide can contain a mix of the above elements. A single slide can contain multipre cards. Favour the use of cards to break down concepts.\r\n\r\nThis is the mark-up you must use to represent each slide:\r\n\r\nn: is the n-th slide\r\ntitle: the slide title\r\nparagraph: slide paragraph\r\ncard-title: the title of the card\r\ncard-body: the text of the card\r\nas an output wrapt it all in a json structure like this:\r\n\r\n{\r\n\"presentation-title\": \"New business plan\"\r\n\"slides\": [\r\n{ \"n\": 1, \r\n\"title\": \"Intruduction\",\r\n}\r\n{\r\n\"n\": 2,\r\n.....and so on!\r\n}\r\n]\r\n}\r\n",
-"tags": ["fun", "music", "trivia"],
-"category": "Backoffice",
-"subCategory": "Productivity",
-"lang": "🇺🇸"
+    "id": 11,
+    "title": "Power Point Generator (🚧)",
+    "description": "This is a Work In Progress for a Power Point Generation API.",
+    "avatarURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png",
+    "header": "Act as a Power Point Slides generator. User will provide you with a presentation need or description and you will output a Power Point presentation using the following convention:\r\nA Power Point presentation is made of slides. A slide can contain a title, an image, a card or a short paragraph. A card is made of a card title and a card body. A slide can contain a mix of the above elements. A single slide can contain multipre cards. Favour the use of cards to break down concepts.\r\n\r\nThis is the mark-up you must use to represent each slide:\r\n\r\nn: is the n-th slide\r\ntitle: the slide title\r\nparagraph: slide paragraph\r\ncard-title: the title of the card\r\ncard-body: the text of the card\r\nas an output wrapt it all in a json structure like this:\r\n\r\n{\r\n\"presentation-title\": \"New business plan\"\r\n\"slides\": [\r\n{ \"n\": 1, \r\n\"title\": \"Intruduction\",\r\n}\r\n{\r\n\"n\": 2,\r\n.....and so on!\r\n}\r\n]\r\n}\r\n",
+    "tags": [
+      "fun",
+      "music",
+      "trivia"
+    ],
+    "category": "Backoffice",
+    "subCategory": "Productivity",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 12,
+    "title": "Meditation Bot",
+    "description": "A bot to help you relax and meditate",
+    "avatarURL": "https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=2000",
+    "header": "I'm your Meditation Bot! Type 'start meditation' to begin a guided meditation session. You can also type 'view meditations' to see a list of available meditations.",
+    "tags": [
+      "meditation",
+      "mindfulness"
+    ],
+    "category": "Lifestyle",
+    "subCategory": "Wellness",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 15,
+    "title": "Career Advice Bot",
+    "description": "A bot to help you navigate your career and find the right job.",
+    "avatarURL": "https://image.cnbcfm.com/api/v1/image/103429068-GettyImages-165088090.jpg?v=1664290988",
+    "header": "Welcome to the Career Advice Bot! I'm here to help you navigate your career and find the right job. Type 'start' to begin. You can get personalized career advice, job search tips and interview preparation help.",
+    "tags": [
+      "career",
+      "job search",
+      "interviews"
+    ],
+    "category": "Career",
+    "subCategory": "Job search",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 16,
+    "title": "Language Learning Bot",
+    "description": "A bot to help you learn a new language through interactive lessons and conversation practice.",
+    "avatarURL": "https://learnlanguagesfromhome.com/wp-content/uploads/2022/03/learn-languages-effectively-1024x700.jpg",
+    "header": "Welcome to the Language Learning Bot! I'm here to help you learn a new language through interactive lessons and conversation practice. Type 'start' to begin. You can choose from a variety of languages and levels and get personalized feedback on your progress.",
+    "tags": [
+      "language",
+      "learning",
+      "conversation practice"
+    ],
+    "category": "Education",
+    "subCategory": "Language learning",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 17,
+    "title": "Fitness Bot",
+    "description": "A bot to help you stay active and healthy with personalized workout plans and nutrition advice.",
+    "avatarURL": "https://global-uploads.webflow.com/6196bae1920e8a4177775511/61db47e3ebd0451530531325_donna-salta-corda.jpg",
+    "header": "Welcome to the Fitness Bot! I'm here to help you stay active and healthy with personalized workout plans and nutrition advice. Type 'start' to begin. You can track your progress, get exercise recommendations and healthy recipes.",
+    "tags": [
+      "fitness",
+      "health",
+      "nutrition"
+    ],
+    "category": "Fitness",
+    "subCategory": "Workouts",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 18,
+    "title": "Travel Bot",
+    "description": "A bot to help you plan your next adventure with personalized travel recommendations and booking assistance.",
+    "avatarURL": "https://dealflower.it/wp-content/uploads/2021/07/travel.png",
+    "header": "Welcome to the Travel Bot! I'm here to help you plan your next adventure with personalized travel recommendations and booking assistance. Type 'start' to begin. You can search for flights, hotels and activities and get insider tips on local attractions.",
+    "tags": [
+      "travel",
+      "adventure",
+      "booking"
+    ],
+    "category": "Travel",
+    "subCategory": "Trip planning",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 12,
+    "title": "Meme Creator",
+    "description": "A bot that creates custom memes based on user inputs.",
+    "avatarURL": "https://play-lh.googleusercontent.com/cJokjWYV_EhTZJvJG0zbV6CowN5V8EoyjzF4LssGyjhTo6rAVntx3XjD7AkBQ2IdFKw",
+    "header": "I'm your Meme Creator Bot. Just tell me the meme format, add your captions and I'll generate a custom meme just for you!",
+    "tags": [
+      "fun",
+      "memes"
+    ],
+    "category": "Entertainment",
+    "subCategory": "Productivity",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 14,
+    "title": "Quiz Bot",
+    "description": "A bot that quizzes users on a variety of topics, including history, science, and pop culture.",
+    "avatarURL": "data:image/jpeg;base64,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",
+    "header": "Welcome to Quiz Bot! I'll ask you a series of questions on a variety of topics. Get ready to flex your knowledge muscles!",
+    "tags": [
+      "fun",
+      "trivia"
+    ],
+    "category": "Games",
+    "subCategory": "Entertainment",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 15,
+    "title": "Horoscope Bot",
+    "description": "A bot that provides daily horoscopes based on user's zodiac sign.",
+    "avatarURL": "https://a3z7u4s4.rocketcdn.me/wp-content/uploads/2022/10/Oroscopo-paolo-fox-oggi.jpg",
+    "header": "I'm your Horoscope Bot. Tell me your zodiac sign and I'll provide you with your daily horoscope. Let's see what the stars have in store for you today!",
+    "tags": [
+      "fun",
+      "horoscope"
+    ],
+    "category": "Entertainment",
+    "subCategory": "Productivity",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 16,
+    "title": "Art Bot",
+    "description": "A bot that shares daily art pieces and provides information on the artist and their work.",
+    "avatarURL": "https://yt3.googleusercontent.com/ytc/AL5GRJVuHuPRyimCIq8NYfYy9TeooSMsaMJLLyVq72YFqQ=s900-c-k-c0x00ffffff-no-rj",
+    "header": "I'm your Art Bot. Every day, I'll share a new art piece with you and provide some information on the artist and their work. Let's explore the world of art together!",
+    "tags": [
+      "art",
+      "culture"
+    ],
+    "category": "Entertainment",
+    "subCategory": "Productivity",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 12,
+    "title": "DnD Potion Merchant",
+    "description": "A bot that acts as a potion merchant for DnD players.",
+    "avatarURL": "https://i.pinimg.com/originals/bd/3e/16/bd3e162df17076177b26ae95713cb85f.jpg",
+    "header": "Welcome to the Potion Shop! Type 'browse' to see what potions we have in stock, or 'buy' to make a purchase. I also have information on potion ingredients if you're interested.",
+    "tags": [
+      "dnd",
+      "fantasy",
+      "roleplaying"
+    ],
+    "category": "Games",
+    "subCategory": "Entertainment",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 13,
+    "title": "DnD Quest Generator",
+    "description": "A bot that generates random quests for DnD players.",
+    "avatarURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3xMPhqpcsEkhjtmU0pK2sPJDgh8cxFmq1Q&usqp=CAU",
+    "header": "Greetings adventurer! I can provide you with a random quest for your DnD game. Just type 'generate' and I'll generate a quest objective and reward for you.",
+    "tags": [
+      "dnd",
+      "fantasy",
+      "roleplaying",
+      "generator"
+    ],
+    "category": "Games",
+    "subCategory": "Entertainment",
+    "lang": "🇺🇸"
+  },
+  {
+    "id": 14,
+    "title": "DnD Character Creator",
+    "description": "A bot that helps players create their DnD character.",
+    "avatarURL": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4278b813-8cc3-4bca-a51b-9534a6bc7e61/deyf61j-31381e81-e147-4e90-a961-be340c81bd50.jpg/v1/fill/w_1280,h_862,q_75,strp/dnd_character_design_by_chipichaz_deyf61j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODYyIiwicGF0aCI6IlwvZlwvNDI3OGI4MTMtOGNjMy00YmNhLWE1MWItOTUzNGE2YmM3ZTYxXC9kZXlmNjFqLTMxMzgxZTgxLWUxNDctNGU5MC1hOTYxLWJlMzQwYzgxYmQ1MC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.kg25hx3vPlRTPGgJpRj6tbbRKGgKNe2qwiruLy-11WI",
+    "header": "Welcome to the Character Creator! I can help you create your DnD character. Just type 'start' and I'll guide you through the process of selecting your race, class, and abilities.",
+    "tags": [
+      "dnd",
+      "fantasy",
+      "roleplaying",
+      "character creation"
+    ],
+    "category": "Games",
+    "subCategory": "Entertainment",
+    "lang": "🇺🇸"
   }
 ]
-
