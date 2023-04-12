@@ -37,6 +37,6 @@ export class NebularLayoutComponent implements OnInit {
   //   this.isCollapsed = !this.isCollapsed
   // }
   goLanding(){
-    this.router.navigate([""])
+    this.router.navigate(["/landing"])
   }
 }
