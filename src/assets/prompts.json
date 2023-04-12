@@ -9,7 +9,7 @@
     "tags": ["general", "dev", "tool"],
     "category": "General",
     "subCategory": "Vanilla",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 1,
@@ -20,7 +20,7 @@
     "tags": ["regex", "dev", "tool"],
     "category": "Coding",
     "subCategory": "Productivity",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
     "tags": ["painting", "sunset", "ocean"],
     "category": "Humor",
     "subCategory": "Entertainment",
-    "lang": "ITA"
+    "lang": "🇮🇹"
   }, 
   {
     "id": 3,
@@ -42,7 +42,7 @@
     "tags": ["python", "dev", "tool"],
     "category": "Coding",
     "subCategory": "Productivity",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "tags": ["fun", "jokes"],
     "category": "Humor",
     "subCategory": "Entertainment",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 7,
@@ -64,7 +64,7 @@
     "tags": ["fun", "trivia"],
     "category": "Games",
     "subCategory": "Entertainment",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 8,
@@ -75,7 +75,7 @@
     "tags": ["fun", "movies"],
     "category": "Games",
     "subCategory": "Entertainment",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 9,
@@ -86,7 +86,7 @@
     "tags": ["fun", "movies", "trivia"],
     "category": "Games",
     "subCategory": "Entertainment",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "tags": ["fun", "music", "trivia"],
     "category": "Games",
     "subCategory": "Entertainment",
-    "lang": "ENG"
+    "lang": "🇺🇸"
   },
 
   {
@@ -109,7 +109,7 @@
 "tags": ["fun", "music", "trivia"],
 "category": "Backoffice",
 "subCategory": "Productivity",
-"lang": "ENG"
+"lang": "🇺🇸"
   }
 ]
 
