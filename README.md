@@ -1,4 +1,4 @@
-# anychatbotGPT
+# anychatbot (gpt)
 
 Static website built with Angular that allows to start custom ChatGPT sessions with premade bots or custom ones. This is a working in progress and any PR related to the list below is more then welcome.
 
