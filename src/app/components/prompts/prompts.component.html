@@ -31,7 +31,7 @@
   <nb-accordion multi>
     <nb-accordion-item *ngFor="let prompt of prompts; index as i">
       <nb-accordion-item-header>
-        {{ prompt.title}} &nbsp;&nbsp; <i> {{ prompt.category}}</i>&nbsp;({{ prompt.lang }})
+          <nb-user picture="{{ prompt.avatarURL }}" name="{{ prompt.title}}" title=" {{ prompt.category}} ({{ prompt.lang }})"></nb-user>
       </nb-accordion-item-header>
       <nb-accordion-item-body>
         {{ prompt.description }}

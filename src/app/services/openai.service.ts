@@ -45,11 +45,13 @@ export class OpenaiService {
     for (var i = 0; i < chatThread.length; i++) {
       string += `${chatThread[i].user.name}` + ": " + `${chatThread[i].text}` + "\n"
     }
-    return `This is a development test. You must follow the instruction given below and act accordingly.\n
-[CHAT SETTINGS]  
-${prompt.header}\n
-[CHAT]
-${string}${prompt.title}: 
+    return `[CHAT SETTINGS]  
+User can write \'help\' anytime to recieve info about the bot and how to interact with it.
+${prompt.header}
+[CHAT HISTORY]
+${string}
+[YOUR ANSWER]
+${prompt.title}: 
 `.toString()
   }
 }

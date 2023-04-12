@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 
 import { FormsModule } from '@angular/forms';
-import { NbThemeModule, NbLayoutModule, NbMenuModule, NbCardModule, NbSidebarModule, NbTabsetModule, NbChatModule, NbButtonModule, NbToggleModule, NbInputModule, NbActionsModule, NbBadgeModule, NbListModule, NbAccordionModule, NbStepperModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbMenuModule, NbCardModule, NbSidebarModule, NbTabsetModule, NbChatModule, NbButtonModule, NbToggleModule, NbInputModule, NbActionsModule, NbBadgeModule, NbListModule, NbAccordionModule, NbStepperModule, NbUserModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 import { LoginComponent } from './components/login/login.component';
@@ -73,7 +73,8 @@ import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
     NbListModule,
     NbAccordionModule,
     NbStepperModule,
-    NtkmeButtonModule
+    NtkmeButtonModule,
+    NbUserModule
     
   ],
   providers: [
