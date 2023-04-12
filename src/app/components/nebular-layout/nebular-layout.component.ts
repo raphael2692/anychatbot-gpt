@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NbSidebarService } from '@nebular/theme';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
 
@@ -12,7 +13,9 @@ export class NebularLayoutComponent implements OnInit {
   isCollapsed = false;
   isAcceptAndDismiss = true;
 
-  constructor(private sidebarService: NbSidebarService, private localStorageService: LocalStorageService) { }
+  constructor(private sidebarService: NbSidebarService, 
+    private localStorageService: LocalStorageService,
+    private router:Router) { }
 
   ngOnInit(): void {
 
@@ -33,4 +36,7 @@ export class NebularLayoutComponent implements OnInit {
   //   this.sidebarService.collapse('left');
   //   this.isCollapsed = !this.isCollapsed
   // }
+  goLanding(){
+    this.router.navigate([""])
+  }
 }

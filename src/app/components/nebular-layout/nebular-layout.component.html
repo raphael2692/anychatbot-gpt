@@ -1,8 +1,8 @@
 <nb-layout>
   <nb-layout-header fixed>
     <nb-icon nbButton (click)="toggle()" icon="menu-outline"></nb-icon>
-    <nb-actions size="medium">
-      <nb-action link="home">anyChatbotGPT</nb-action>
+    <nb-actions size="large">
+      <nb-action (click)="goLanding()" style="cursor: pointer;">anyChatbotGPT</nb-action>
     </nb-actions>
   </nb-layout-header>
 
@@ -35,7 +35,7 @@
     <router-outlet></router-outlet>
   </nb-layout-column>
 
-  <nb-layout-footer>
+  <nb-layout-footer fixed="false">
     <div style="display: inline;">
       <p style="display: inline;"><a style="color: black;" href="assets/privacy.txt" target="_blank">Privacy</a>&nbsp;|&nbsp;</p>
       <p style="display: inline;"><a style="color: black;" href="assets/terms.txt" target="_blank">Terms of Service</a>&nbsp;|&nbsp;</p>

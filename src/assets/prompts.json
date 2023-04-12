@@ -57,7 +57,7 @@
   },
   {
     "id": 7,
-    "title": "Star Wars Trivia",
+    "title": "Star Wars Trivia Bot",
     "description": "A bot to test your knowledge about the Force.",
     "avatarURL": "https://cdn.pixabay.com/photo/2017/03/25/06/57/star-wars-2172948__480.jpg",
     "header": "After the first message from user begin a Star Wars trivia game where you must ask the user a question and he has to answer. A game is made of 10 question and user win if answer correctly to at least 6 of them. If the user make more then 4 mistakes, the game ends.",
